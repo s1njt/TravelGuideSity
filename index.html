@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Путеводитель по Арзамасу</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+    <link rel="icon" href="photo/icon.jpg" type="image/x-icon">
+    <script src="js/scroll-dostpr.js"></script>
+    <script src="js/place-id-hover.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">       
+        <!--КАРУСЕЛЬ-->
+        <div class="row">
+          <div id="carouselExampleIndicators" class="carousel slide px-0" data-bs-ride="carousel" id="main">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="photo/fon1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="photo/fon2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="photo/fon3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- Перемещаем навбар сюда -->
+                  <nav class="navbar bg-body-tertiary">
+                          <img src="photo/logo.png" alt="Логотип" class="logo">
+                      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 collapse navbar-collapse" id="navbarNav">
+                              <li class="nav-item">
+                                  <a href="#main" class="nav-link px-2 link-secondary">Главная</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#about-project" class="nav-link px-2 link-dark">О проекте</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#about-gorod" class="nav-link px-2 link-dark">О городе</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#place" class="nav-link px-2 link-dark">Достопромечательности</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#meroprit" class="nav-link px-2 link-dark">Мероприятия</a>
+                              </li>
+                          </ul>
+                      </nav>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#main">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#about-project">О проекте</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#about-gorod">О городе</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#place">Достопромечательности</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#events">Мероприятия</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+        
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-caption d-none d-md-block centered-label">
+          <h1 class="h1">Арзамас</h1>
+          <a href="#place"><button class="start-tour-button" href="#place">Начать свой тур</button></a>
+          
+      </div>
+        <!-- О ПРОЕКТЕ -->
+        <div class="row" id="about-project">
+          <div class="about-project">
+              <img id="fon1" src="photo/fon-about-project.png" alt="Image 2">
+          </div>
+      </div>
+        
+        <!-- О ГОРОДЕ -->
+        <div class="row" id="about-gorod">
+          <div class="about-gorod-zagalovok">
+            <h1>ВРЕМЯ ИСТОРИИ И БУДУЩЕГО ГОРОДА</h1>
+          </div>
+          <div class="about-gorod-video">
+            <iframe src="https://vk.com/video_ext.php?oid=-108494404&id=456242359&hd=2" width="1560" height="815" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="row-gorood-text">
+            <div class="column-gorood-text">
+              <h2>Талантливый оазис</h2>
+              <p>
+                  Арзамас – небольшой город Нижегородской области, находится в 112 км к югу от 
+                  Нижнего Новгорода. Здесь жили и работали выдающиеся писатели, поэты, ученые и 
+                  художники.
+              </p>
+              <h2>Легенда о зарождении Арзамаса</h2>
+              <p>
+                 Согласно легенде, название города образовано из имён двух мордовских братьев Арзая и 
+                 Масая, которые встретили Ивана Грозного дарами, когда тот со своею ратью шел на 
+                 Казань. Иван Грозный повелел мордве принять христианство (они были язычниками) и 
+                 основал в новом граде первый православный мужской монастырь, на который и 
+                 возложил великую миссию крещения мордвы.
+              </p>
+              <h2>История основания и роль крепости в XVII веке</h2>
+              <p>
+                Основан, предположительно, в 1572 году как новый военный и административный центр 
+                для контроля земель на востоке от Мурома и юге от Нижнего Новгорода. В XVII веке 
+                гарнизон крепости принимал участие в подавлении восстания Степана Разина.
+              </p>
+              <h2>Торговый центр и промышленное развитие с XVII века</h2>
+              <p>Официально годом основания Арзамаса считается 1578 год. С XVII века Арзамас 
+                приобрел значение важного транзитного пункта на пути из Москвы в юго-восточные 
+                районы страны. Безусловно, это дало толчок развитию промышленности, мастерства и 
+                купечества. Город славился торговлей, особенно луком и знаменитыми арзамасскими 
+                гусями, а также выделкой кож и кожевенных изделий. Знаменитая арзамасская юфть 
+                высоко ценилась в Европе.
+              </p>
+              <p>В XVII веке Арзамас был центром большого уезда и крупным торговым городом, а в 
+                начале XVIII века почти догнал Нижний Новгород по населению. Особого размаха 
+                достигло строительство храмов, к началу XIX столетия было возведено 36 церковных 
+                зданий. Венцом стало сооружение в Арзамасе Воскресенского собора. Благодаря 
+                строительству церквей развивались сопутствующие ремесла - иконопись, чеканка.
+              </p>
+              <h2>Сокровищница культурного наследия: музеи и памятники Арзамаса</h2>
+              <p>Арзамас является значимой частью культурного наследия России. В городе много 
+                музеев, архитектурных памятников.
+              </p>
+              <p>Все пути в Арзамасе ведут на центральную площадь, которая называется Соборная. Еще 
+                в 1781 году Екатерина II утвердила такой план радиально-лучевого расположения 
+                арзамасских улиц, которые ведут на Соборную площадь. На площади находится главный 
+                архитектурный и исторический памятник города - Воскресенский собор. Собор сам по 
+                себе велик и грандиозен, он имеет 48 колонн, внутри богато украшен фресками и 
+                росписью. Не зря Воскресенский собор строился в течение 28 лет (1814-1842), он 
+                действительно поражает!
+              </p>
+              <p>Основное средоточие церквей и монастырей Арзамаса находится на Соборной площади, 
+                недаром она так называется. Тут, кроме Воскресенского собора, и церковь Живоносного 
+                источника, и комплекс Никольского женского монастыря.
+                Из гражданских сооружений на площади сохранилось здание магистрата, построенное 
+                во второй половине XVIII века. Магистратом назывался орган местного самоуправления, 
+                который был учрежден еще Петром I.
+              </p>
+              <p>Рядом с Арзамасом находится село Выездное - вотчина князей Багратионов. В Выездном 
+                есть Смоленская церковь – памятник архитектуры 18 века с уникальным иконостасом и 
+                картиной знаменитого испанского художника Бартоломео Эстебана Мурильо 
+                «Распятие». Картина была получена владельцем села Выездное графом Салтыковым в 
+                дар от дочери саксонского короля, принцессы Марии-Августы.
+              </p>
+              <h2>Рост, развитие и орден «Знак Почёта» за 400 лет успехов</h2>
+              <p>В 1954 году Арзамас становится областным центром, что даёт для города огромный 
+                потенциал для развития. Поэтому начинается бурное строительство инфраструктуры и 
+                промышленности. 6 сентября 1978 года за успехи, достигнутые в хозяйственном, 
+                культурном строительстве, и в связи с 400-летием основания города награждён орденом 
+                «Знак Почёта».
+              </p>
+              <h2>Фестиваль 'Арзамасский гусь' и его историческое наследие</h2>
+              <p>Ежегодно в начале лета в Арзамасском районе проводится символичный фестиваль 
+                кулинарного искусства "Арзамасский гусь". Символичный - потому что Арзамас с 
+                незапамятных времен славился своими гусями, их разводили, гоняли на продажу, ели, 
+                арзамасцы набивали перьями подушки, устраивали гусиные бои. Арзамасский гусь 
+                красовался на гербе литературного кружка "Арзамас", в который входили А. С. Пушкин, 
+                В. А. Жуковский, П. А. Вяземский, А. Н. Плещеев.
+              </p>
+              <h2>Современный Арзамас — один из интереснейших культурных центров в Нижегородской 
+                области.</h2>
+              <h2></h2>
+              <p>В городе развернута широкая сеть муниципальных учреждений культуры, в том числе 
+                театр драмы (в 2009 году к нему присоединен арзамасский театр оперы), Центральная 
+                городская библиотека им. М. Горького (имеет сеть филиалов в разных частях города), 
+                Центральная городская детская библиотека им. А. П. Гайдара, 3 музея (историко-
+                художественный, литературно-мемориальный музей А. П. Гайдара, мемориальный музей 
+                М. Горького), выставочный зал, музыкальное училище, 2 детские музыкальные школы с 
+                двумя филиалами, детская художественная школа им. А. В. Ступина, городской Дом 
+                культуры, парк культуры и отдыха им. А. П. Гайдара, 1 кинотеатр, музей спорта на 
+                стадионе «Знамя»,  частный музей "Мир старины". С 2005 года работает православная 
+                гимназия. 
+              </p>
+              <h2>Наследие величественной старины и драгоценного зодчества</h2>
+              <p>
+                Однако главной достопримечательностью города являются памятники старины и 
+                народного зодчества. В конце XIX — начале XX веков здесь насчитывалось 36 церквей и 
+                4 монастыря. О золотом веке Арзамаса (1775—1850 г.) напоминают Воскресенский, 
+                Спасо-Преображенский соборы, магистрат, Гостиный ряд, многие сохранившиеся до 
+                наших дней церковные и монастырские здания. Недаром Арзамас вошел в число 116 
+                исторических городов страны.
+              </p>
+              <p>Город Арзамас является родиной Патриарха Сергия (Старгородского), архитектора М. П. 
+                Коринфского, русской писательницы М. С. Жуковой. В селе Красном, близ города, 
+                родился иеросхимонах Исаакий, строитель Саровской пустыни. В этом же селе родилась 
+                заслуженная артистка РСФСР В. И. Теличкина.
+              </p>
+              <h2>Великие имена в истории Арзамаса: встречи и пребывание знаменитостей</h2>
+              <p>В городе проездом была Екатерина II, А. В. Суворов, П. И. Мельников-Печерский, Л. Н. 
+                Толстой, Н. Г. Чернышевский, В. Г. Короленко, К. Г. Паустовский, В. Маяковский… 
+                Возможно, в городе был и А. С. Пушкин. Здесь жил А. П. Гайдар, пребывал в ссылке М. 
+                Горький. 
+              </p>
+              <h2>Памятники и храмы: культурное наследие современного Арзамаса</h2>
+              <p>В настоящее время в городе открыто несколько храмов, многие восстанавливаются. 
+                Открыт памятник патриарху Сергию. Имеются памятники В. И. Ленину, К. Марксу, А. П. 
+                Гайдару, М. Горькому, А. В. Ступину, В. А. Новикову — арзамасцу, Г. К. Жукову, А. С. 
+                Пушкину и др.</p>
+              <h2>История герба Арзамаса: от эпохи Петра I до современности</h2>
+              <p>Идея создания герба для города Арзамаса относится к эпохе Петра I, когда в 1722 году по 
+                его указу была утверждена правительственная Герольдмейстерская контора.
+                Рисунок герба Арзамаса в 1781 году назван старым, так как в его основу лёг эскиз графа 
+                Франциска де Санти (приглашённого из Италии и возглавившего работу по созданию 
+                гербов). Герб нарисован примерно между 1725—1727 годами, во времена царствования 
+                императрицы Екатерины I и предназначался первоначально для помещения на полковую 
+                амуницию и полковых знамёнах Арзамасского полка. Впервые утверждён 16 августа 1781 
+                года указом Екатерины II. В 1993 году городская администрация вновь утвердила этот 
+                герб как официальный.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ДОСТОПРОМЕЧАТЕЛЬНОСТИ -->
+        <div class="row" id="place">
+          <div class="place-carousel">
+            <button class="prev-button"></button>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place1.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/slidder-photos/vossobor.jpg" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 1</h1>
+                      <h2>Воскресенский собор</h2>
+                      <p>
+                        Важнейшую достопримечательность Арзамаса — Воскресенский собор видно еще на подъезде к городу. Это грандиозное сооружение на центральной площади с 5 куполами и почти 50 колоннами, белоснежное и украшенное фресками. Строительство храма началось в 1814 г., после победы над Наполеоном, однако закончилось только через 28 лет — в 1842 г.
+                      </p>
+                      <p>
+                        Белый храм высотой около 50 м достигает 64 м в длину и столько же в ширину. Он очень пропорционален и гармоничен, с каждой стороны — по 12 колонн. Фронтоны украшают фрески с библейскими сюжетами: с востока — «Воскресение Христа», с юга — «Явление святой Троицы Авраму», с запада — «Собор всех святых» и с севера — «Покров Богородицы».
+                      </p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place2.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/foto2s.jpg"  class="imgIntense" alt="Image 1"  >
+                  <div class="text-container">
+                      <h1>Интересность 2</h1>
+                      <h2>Спасо-Преображенский собор</h2>
+                      <p>Спасо-Преображенский собор — главный храм одноименного монастыря Арзамаса. Построенный в первой половине 17 века, он считается древнейшим каменным сооружением города. В 20 веке здание использовалось государственным архивом Нижегородской области. Однако, после того как в начале нового тысячелетия Спасо-Преображенская обитель вновь была передана церкви и открыта, собор начали восстанавливать. В настоящее время реставрационные работы еще ведутся.</p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place4.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/3.jpg" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 3</h1>
+                      <h2>Женский монастырь</h2>
+                      <p>Напротив Воскресенского собора на Соборной площади Арзамаса стоит старинный Свято-Николаевский монастырь. В нем два действующих храма: Богоявления Господня и иконы Богородицы «Всех скорбящих радость». В первом находится образ Николая Чудотворца, прославившийся еще в 17 веке своими исцеляющими свойствами, во втором — удивительная икона «Избавление от бед страждущих», ставшая знаменитой в начале 21 века. Женский монастырь каждый год принимает неиссякаемое число паломников, желающих приблизиться к его святыням. При этом, здание Богоявленской церкви еще и важный элемент, формирующий облик центра города, куда обязательно стоит зайти. </p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place9.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/Smn.png" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 4</h1>
+                      <h2>Музей Патриаршества</h2>
+                      <p>Музей русского патриаршества – это совместный проект Нижегородского государственного историко-архитектурного музея заповедника и Нижегородской митрополии. Музей расположен на Соборной площади города Арзамаса в уникальном здании магистрата — памятнике архитектуры второй половины XVIII века. Здание магистрата является объектом культурного наследия федерального значения, а также единственным для страны неперестроенным административным зданием такого типа и времени постройки.</p>
+                      <p>Экспозиция музея посвящена жизни и деятельности Патриархов Московских и всея Руси Никона и Сергия, уроженцев Нижегородской земли, а также Патриархов Русской Православной Церкви XX – начала XXI вв.: Алексия I, Пимена, Алексия II и Кирилла. Представлены подлинные вещи Патриархов и современные реконструкции. Отдельный зал посвящен деятельности Арзамасского городского магистрата.</p>
+                    </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place5.html" class="image-and-text-container" target="_blank">
+                <img src="photo/place5.png" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 5</h1>
+                      <h2>Историко-художественный музей</h2>
+                      <p>Историко-художественный музей Арзамаса на центральной площади — обязательный остановочный пункт для туристов. Здесь можно познакомиться с историей города, посмотреть на предметы быта древнемордовских племен, населявших район в 1 тысячелетии до н. э., увидеть произведения арзамасских художников и мастеров народных промыслов разных времен.</p>
+                      <p>Музей был основан через пару лет после присвоения Арзамасу статуса областного города — в 1956 г. Первоначально он был краеведческим и занимал здание Ильинской церкви — архитектурного памятника русского барокко 18 века. </p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place6.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/place8.png" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 6</h1>
+                      <h2>Музей Горького</h2>
+                      <p>В одноэтажном деревянном доме купца Подсосова на одной из центральных улиц Арзамаса в начале 20 века отбывал ссылку Алексей Пешков, известный больше под своим литературным псевдонимом Максим Горький. Писатель вместе с женой Екатериной провел здесь 4 месяца — лето 1902 г. Так как обстановка дома со временем изменилась несущественно, в 1982 г. было решено организовать в нем музей.</p>
+                      <p>Музей состоит из трех комнат: небольшой кабинет, столовая и спальня, разделенная с комнатой жены. Общая площадь экспозиции — 250 кв. м. Все помещения отреставрированы, интерьер восстановлен. Здесь собраны вещи писателя и его семьи, бытовые предметы, черновики работ. Интересно взглянуть на фотографии арзамасского периода.</p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place7.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/place9.png" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 7</h1>
+                      <h2>Гостиные ряды</h2>
+                      <p>Музей состоит из трех комнат: небольшой кабинет, столовая и спальня, разделенная с комнатой жены. Общая площадь экспозиции — 250 кв. м. Все помещения отреставрированы, интерьер восстановлен. Здесь собраны вещи писателя и его семьи, бытовые предметы, черновики работ. Интересно взглянуть на фотографии арзамасского периода.</p>
+                      <p>
+                        Гостиные ряды по-прежнему в основном используются по своему прямому назначению — для торговли. Это место, наполненное множеством магазинов, где можно купить самые разные предметы.
+                      </p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place8.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/place10.png" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 8</h1>
+                      <h2>Музей Аркадия Гайдара</h2>
+                      <p>В литературном музее представлено свыше 20 тыс. предметов. Это рукописи, фотографии, личные вещи Гайдара и его семьи. В основном они размещаются на первом этаже, а второй занимают временные выставки. Интересны прижизненные издания книг, а также опубликованные переводы. Работники музея подробно рассказывают о становлении Аркадия Гайдара как журналиста и писателя, делятся историями, связанными с экспонатами. Также внизу можно увидеть коллекцию, посвященную сыну и внуку писателя. </p>
+                      <p>В музее регулярно проводятся тематические праздники, выставки народного творчества, театрализованные экскурсии. Можно заглянуть и в деревянный мемориальный дом, расположенный справа от памятника. Здесь восстановлена обстановка, в которой прошло детство Гайдара: комнаты детей, спальня родителей, небогатая гостиная с самоваром, русская печь.</p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place9.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/slidder-photos/patr.jpg" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 9</h1>
+                      <h2>Здание ратуши (магистрат)</h2>
+                      <p>Для размещения введенных указом Петра I органов городского самоуправления — магистратов — требовалась постройка отдельных зданий, именовавшихся магистратными покоями, или ратушами. В Арзамасе здание ратуши появилось в 1750-1760 годах.</p>
+                  </div>
+              </a>
+            </div>
+            <div class="place-slide" title="Кликните, чтобы узнать больше">
+              <a href="html/place10.html" class="image-and-text-container" target="_blank">
+                  <img src="photo/slidder-photos/park.jpg" class="imgIntense" alt="Image 1">
+                  <div class="text-container">
+                      <h1>Интересность 10</h1>
+                      <h2>Парк имени Гайдара</h2>
+                      <p>Созданный в конце 1950-х годов парк имени Горького всегда был очень любим арзамасцами, может быть, в силу того, что располагается он в самом центре города – не нужно далеко ехать, чтобы прогуляться в тени деревьев.</p>
+                  </div>
+              </a>
+            </div>
+            
+            
+            <button class="next-button"></button>
+          </div>
+        </div>
+        <div class="row" id="place-id">
+          <div class="carousel-links">
+            <a href="#" data-slide-to="0" class="carousel-link">1</a>
+            <a href="#" data-slide-to="1" class="carousel-link">2</a>
+            <a href="#" data-slide-to="2" class="carousel-link">3</a>
+            <a href="#" data-slide-to="4" class="carousel-link">4</a>
+            <a href="#" data-slide-to="5" class="carousel-link">5</a>
+            <a href="#" data-slide-to="6" class="carousel-link">6</a>
+            <a href="#" data-slide-to="7" class="carousel-link">7</a>
+            <a href="#" data-slide-to="8" class="carousel-link">8</a>
+            <a href="#" data-slide-to="9" class="carousel-link">9</a>
+            <a href="#" data-slide-to="10" class="carousel-link">10</a>
+          </div>
+        </div>
+        
+        
+        <!-- НА КАРТАХ -->
+        <div class="na-cartah" id="carta">
+          <div class="dostmap">
+              <h2 class="map-title">Достопромечательности на много ближе чем вы думаете !</h2>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae48d43dfbcf8b4364b27f7a86b2d51e02abf962ed69b9e8763f71faf86455a9c&amp;source=constructor" width="100%" height="644" frameborder="0"></iframe>
+            </div>
+        </div>
+  
+        <!-- МЕРОПРИЯТИЯ -->
+        <div class="meroprit" id="meroprit">
+          <div class="row" style="margin: 30px 0;">
+            <div class="calendar-label"></div>
+            <div class="calendar-container">
+              <button class="calendar-prev"></button>
+              <div class="calendar-dates">
+                <div class="calendar-days-of-week">
+                </div>
+                <div class="calendar-dates-grid">
+                </div>
+              </div>
+              <button class="calendar-next"></button>
+            </div>
+            
+          </div>
+          <a href="html/meroprit1.html" class="meroprit normal-text" target="_blank">
+            <div class="row">
+              <div class="sub-block-left">
+                <img src="photo/events/events1.png" class="custom-image" alt="Изображение 1">
+                <div class="sub-content">
+                  <h1 class="custom-caption-left" >Показ фильма «Иван Семенов: Большой поход»</h1>
+                  <p class="custom-description-left">Иван Семенов устраивает новый переполох! Таня — школьная подруга героя — уезжает. Теперь она будет учиться в другой стране, а Иван останется без своей любви…</p>
+                  <button class="more-detailed-left">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="html/meroprit2.html" class="meroprit normal-text" target="_blank">
+          <div class="row">
+            <div class="sub-block-right">
+              <div class="sub-content">
+                <h1 class="custom-caption-right">Программа «Таинство венчания»</h1>
+                <p  class="custom-description-right">Как правильно выбрать вторую половинку? Милый друг ничего не сказал, а просто подарил ландыши — что это вообще значит? Почему жених приходил в церковь с золотым кольцом, а невеста с серебряным?</p>
+                <button class="more-detailed-right">Подробнее</button>
+              </div>
+              <img src="photo/events/events2.png" class="custom-image" alt="Изображение 2">
+            </div>
+          </div>
+        </a>
+        <a href="html/meroprit3.html" class="meroprit normal-text" target="_blank">
+          <div class="row">
+            <div class="sub-block-left">
+              <img src="photo/events/events3.png" class="custom-image" alt="Изображение 1">
+              <div class="sub-content">
+                <h1 class="custom-caption-left">Программа «Наследие предков»</h1>
+                <p class="custom-description-left">Выездная программа проводится в креативном центре парка им. А.П. Гайдара и включает: интерактивное мероприятие «Народные промыслы Арзамасского уезда XVIII — XX вв.» и мастер-класс.</p>
+                <button class="more-detailed-left">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="html/meroprit4.html" class="meroprit normal-text" target="_blank">
+          <div class="row">
+            <div class="sub-block-right">
+              <div class="sub-content">
+                <h1 class="custom-caption-right">Экскурсия «Зачем я сюда заехал?»</h1>
+                <p  class="custom-description-right">Вы сможете на свадьбе «по-арзамасски», узнать, как правильно выбрать вторую половинку. Гости поговорят о «неравном браке». Это произведение искусства или суровая реальность? Свадьба за счет невесты — это шутка? </p>
+                <button class="more-detailed-right">Подробнее</button>
+              </div>
+              <img src="photo/events/events4.png" class="custom-image" alt="Изображение 2">
+            </div>
+          </div>
+        </a>
+        <a href="html/meroprit5.html" class="meroprit normal-text" target="_blank">
+          <div class="row">
+            <div class="sub-block-left">
+              <img src="photo/events/events5.png" class="custom-image" alt="Изображение 1">
+              <div class="sub-content">
+                <h1 class="custom-caption-left">Арт-тур «Оживший вернисаж»</h1>
+                <p class="custom-description-left">Арзамасская школа живописи сыграла огромную роль в становлении русской национальной культуры и просвещения. В числе учеников А.В. Ступина был известный художник В.П. Перов.</p>
+                <button class="more-detailed-left">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="html/meroprit6.html" class="meroprit normal-text" target="_blank">
+          <div class="row">
+            <div class="sub-block-right">
+              <div class="sub-content">
+                <h1 class="custom-caption-right">Интерактивная программа «Изба очень хороша, живет в ней русская душа»</h1>
+                <p  class="custom-description-right">Программа включает интерактивную экскурсию «Тайны старого дома», которая знакомит с жизнью, бытом и обычаями русского народа.</p>
+                <button class="more-detailed-right">Подробнее</button>
+              </div>
+              <img src="photo/events/events6.png" class="custom-image" alt="Изображение 2">
+            </div>
+          </div>
+        </a>
+        <a href="html/meroprit7.html" class="meroprit normal-text" target="_blank">
+          <div class="row">
+            <div class="sub-block-left">
+              <img src="photo/events/events7.png" class="custom-image" alt="Изображение 1">
+              <div class="sub-content">
+                <h1 class="custom-caption-left">Мастер-класс «Формула читателя = (Горький + Гайдар): Менделеев»</h1>
+                <p class="custom-description-left">Сегодня узнать о жизни и творчестве писателей можно, посетив музеи А. Гайдара и М. Горького. Уникальность музеев — в сохранении духа и быта писателей в Арзамасе.</p>
+                <button class="more-detailed-left">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="html/meroprit8.html" class="meroprit normal-text" target="_blank">
+          <div class="row">
+            <div class="sub-block-right">
+              <div class="sub-content">
+                <h1 class="custom-caption-right">Выставка «Максим Горький в Арзамасе»</h1>
+                <p  class="custom-description-right">Выставка располагается в музее М. Горького в старинном купеческом доме Подсосовых. В этом доме с мая по сентябрь 1902 года жил с семьей А.М. Горький, сосланный в Арзамас под гласный надзор полиции. В доме воссоздана мемориальная обстановка: рабочий кабинет, столовая, комната Е.П. Пешковой.</p>
+                <button class="more-detailed-right">Подробнее</button>
+              </div>
+              <img src="photo/events/events8.png" class="custom-image" alt="Изображение 2">
+            </div>
+          </div>
+        </div>
+      </a>
+        
+        <!-- ПОДВАЛ -->
+        <div class="row">
+          <div class="fother">
+              <img id="fon1" src="photo/fother.png" alt="Image 2">
+          </div>
+        </div>
+   </div>
+   <script src="js/calendar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  background-image: url("../photo/osn-fon-boka1.png");
+  background-size: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: transparent !important;
+  max-width: 100%;
+}
+@font-face {
+  font-family: 'CyrillicGoth';
+  src: url('font/ofont_ru_CyrillicGoth.ttf');
+}
+@font-face {
+  font-family: 'Bookman Old Style';
+  src: url('font/bookmanoldstyle.ttf');
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+element.style {
+  max-height: 200px;
+}
+.container img {
+  max-height: 800px;
+  margin-top: 20px;
+}
+.text-center{
+  margin-top: 50px;
+}
+.text-center h1 {
+  font-family: "Bookman Old Style", serif;
+  font-weight: bold;
+  font-size: 46px;
+  color: #40322A;
+}
+.text-center h3 {
+  font-family: "Bookman Old Style", serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: #40322A;
+}
+.text-center h4 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fa2742;
+}
+.text-center p {
+  margin-top: 20px;
+  font-family: "Bookman Old Style", serif;
+  font-size: 20px;
+  color: #40322A;
+}
+.btn-custom {
+  border: none;
+  background-color: #fa2742;
+  color: #fff;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  border: none;
+  margin: 0 auto;
+}
+.btn-custom:hover, .btn-custom:focus {
+  background-color: #d61c35;
+  color: #fff;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  border: none;
+  margin: 0 auto;
+}
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 390px;
+  background-color: #40322A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.footer-images {
+  display: flex;
+  margin-left: 20px;
+  height: 90%;
+}
+.footer-images img {
+  width: calc(33.33% - 13.33px);
+  height: auto;
+  padding: 20px;
+}
+.custom-modal {
+  background-color: #40322a;
+  color: white;
+}
+.success-notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+}
+.error-msg {
+  color: red;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+.send {
+  display: block;
+  margin: 0 auto;
+  background-color:#D6A261;
+  border-color: none;
+  border-radius: 0px;
+  border: none;
+  margin-top: 20px;
+}
+.send:hover{
+  background-color: #d61c35;
+ ;
+  border-color: none;
+  border-radius: 0px;
+  border: none;
+}
+.form-group label{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+.form-control {
+  color: #40322a;
+}
+#prev, #next {
+  margin-top: 60px;
+  width: 80px;
+  height: 80px;
+  border: none;
+}
+#prev {
+  margin-left: 20px;
+  background: url("../photo/left-icon-hover.png") no-repeat;
+}
+#next {
+  background: url("../photo/right-icon-hover.png") no-repeat;
+}
+#prev:hover {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+#next:hover {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}

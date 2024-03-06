@@ -1,0 +1,407 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar-toggler:hover{
+    text-decoration: none;
+    border: 0;
+  }
+  html{
+    background-image: url("../photo/osn-fon-boka1.png");
+    background-size: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: transparent !important;
+    max-width: 100%;
+  }
+@font-face {
+    font-family: 'CyrillicGoth';
+    src: url('font/ofont_ru_CyrillicGoth.ttf');
+    }
+    @font-face {
+    font-family: 'Bookman Old Style';
+    src: url('font/bookmanoldstyle.ttf');
+    }
+    .row > * {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 0;
+      }
+.container {
+    max-width: 90%;
+    margin: 0 auto;  
+  }
+
+.button-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 65px;
+    margin-top: 60px;
+}
+.button-content label
+{
+    margin-right: 20px;
+    margin-bottom: 15px;
+    color: #D6A261;
+    
+}
+
+.close-button {
+    background: url("../photo/close-icon.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    border: 0;
+}
+  #about-dostpr {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    background-color: #40322A; /* Цвет фона при наведении */
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.video iframe {
+    display: block; /* Чтобы видео было блочным элементом */
+    margin: 0 auto; /* Центрирование видео по горизонтали */
+}
+
+
+.infoblock {
+    padding-left: 60px; /* Отступ слева */
+    padding-right: 60px; /* Отступ справа */
+    padding-top: 60px;
+}
+.infoblock h3{
+    font-family: "Bookman Old Style", serif;
+    font-weight: normal;
+}
+.textblock {
+    /* display: flex; */
+    column-count: 2; /* Разделение на две колонки */
+    column-gap: 20px; /* Расстояние между колонками */
+    margin-top: 40px;
+}
+.textblock p {
+    column-count: 2; /* Разделение текста на две колонки */
+    column-gap: 20px; /* Расстояние между колонками, по желанию */
+    text-align: justify; /* Выравнивание текста по ширине */
+
+}
+.text p{
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Установите шрифт Arial */
+}
+.textblock img {
+    max-width: 900px; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическое соотношение сторон */
+}
+.textblock1 {
+    column-count: 4;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    max-width: 1630px; /* Максимальная ширина контейнера */
+    padding: 0 60px;
+    margin: 20px 0;
+}
+
+.textblock1 p {
+    text-align: justify; /* Выравнивание текста по ширине */
+    max-width: 100%; /* Максимальная ширина для текста в колонках */
+}
+
+
+h1{
+    font-family: "Bookman Old Style", serif;
+    font-size: 130px;
+    color: #40322A;
+    transition: all 1s;
+  
+}
+
+
+
+
+.text p::first-letter {
+    margin-left: 20px; /* Табуляция первой буквы */
+  }
+.textblock1 p::first-letter
+{
+    margin-left: 20px; /* Табуляция первой буквы */
+}
+
+.footer-left h3,
+.footer-right h3
+{
+    font-family: "Bookman Old Style", serif;
+}
+.footer-left h2,
+.footer-right h2
+{
+    font-size: 16px;
+}
+
+.dostmap {
+  text-align: center; /* Центрирование содержимого */
+}
+iframe {
+  
+  width: 92%; /* Ширина на весь доступный контейнер */
+  height: 800px;
+}
+
+
+
+/* В нутри стен*/
+
+
+.inside{
+    background-color: #40322A;
+    color: #D6A261;
+    padding: 50px 0;
+}
+.inside h1{
+    margin-left: 60px;
+    color: #D6A261;
+}
+
+.inside h2{
+    font-family: "Bookman Old Style", serif;
+}
+.row-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.row-center{
+    display: flex;
+    justify-content: center;
+}
+.row-right{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+
+}
+.row-right .item img{
+    width: 85.4%;
+}
+
+.row-center .item{
+    margin-right: 80px;
+   }
+
+
+
+.row-left .item img{
+    width: 85.4%;
+}
+.row-center .item img{
+    width: 600px;
+    height: 500px;
+}
+/* 
+.row-right .item img{
+    width: 700px;
+    height: 600px;
+} */
+/* .row-right .item2 img{
+    width: 800px;
+    height: 400px;
+} */
+
+
+
+
+
+
+
+
+/* Подвал*/
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-and-text-container {
+    display: flex;
+    width: 50%; /* Распределить на половины экрана */
+    text-decoration: none;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Занимать всю доступную ширину внутри .image-and-text-container */
+    justify-content: center; /* Центрировать содержимое по вертикали */
+}
+.footer-left a,
+.footer-right a {
+    text-decoration: none; /* Удалить подчеркивание ссылок */
+    color: inherit; /* Использовать цвет текста по умолчанию */
+}
+
+.footer-left h2,
+.footer-right h2,
+.footer-left h3,
+.footer-right h3 {
+    margin: 0;
+}
+
+.footer-left {
+    background-color: #40322A;
+    color: #D6A261;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-right {
+    background-color: #40322A;
+    color: #D6A261;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: right;
+    align-items:  end;
+}
+
+.footer-left:hover {
+    background-color: #D6A261;
+    color: #40322A;
+}
+.footer-right:hover {
+    background-color: #D6A261;
+    color: #40322A;
+    
+}
+
+.prev-button {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: url("../photo/left-icon-hover.png") no-repeat;
+}
+.next-button {
+    margin-top: 20px;
+    width: 35px;
+    height: 50px;
+    border: 0;
+    background: url("../photo/right-icon-hover.png") no-repeat;
+}
+
+@media (min-width: 1400px)
+
+{
+	.textblock
+	{
+		display: flex;
+	}
+}
+@media (max-width: 1399px)
+
+{
+	.textblock
+	{
+		display: block;
+	}
+}
+
+
+@media (max-width: 1600px) {
+
+    /* Уменьшаем всё */
+    html {
+      font-size: 14px; 
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem; 
+    }
+  
+    .container {
+      max-width: 80%;
+    }
+    .logo,
+    .image,
+    img {
+      width: 100%;
+     
+    }
+    .imgIntense {
+      width: 60%;
+     
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+      padding: 0.5rem; 
+    }
+  
+    .centered-label h1 { 
+      font-size: 200px;
+    }
+  
+    .start-tour-button,
+    .more-detailed-left,
+    .more-detailed-right {  
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  
+    .text-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .text-container h2 {
+      font-size: 2rem;
+    }
+    
+    .text-container p {
+      font-size: 1rem;
+    }
+  
+    .custom-image {
+      max-width: 40%; 
+    }
+    
+    .column-gorood-text {
+      column-count: 2;  
+    }
+  
+    .calendar-date {
+      font-size: 1rem;  
+    }
+  
+    .calendar-prev,
+    .calendar-next {
+      width: 20px;
+      height: 30px;
+    }
+}
